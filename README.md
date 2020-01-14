@@ -23,8 +23,8 @@ int main(){
         std::cout << *i << " "; 
 
 }
-
 ```
+This means that if needed, the vector can hold more than 5 values or less than 5 values if necessary. In the example above, it displays how many species of bear fight over 1 single twinkie. Vectors are much more useful in cases during situations where outputs are not guarenteed to be exact results.
 
 **Maps in STL:**
 Maps within STL are associative containers that 'map' data and store in an order.
