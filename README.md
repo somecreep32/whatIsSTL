@@ -34,8 +34,27 @@ Maps within STL are associative containers that 'map' data and store in an order
 #include <map>
 #include <iterator>
 
+std::map<int, double> monthlyProfits;
 
+int main(){
+    
+    monthlyProfits.insert(std::pair<int, double>(1, 242.24));
+    monthlyProfits.insert(std::pair<int, double>(2, 361.63));
+    monthlyProfits.insert(std::pair<int, double>(3, 651.96));
+    monthlyProfits.insert(std::pair<int, double>(4, 999.99));
+    
+    std::map<int, double>::iterator it;
+    std::cout<<"ADMINISTRATION.SYS\n"
+        <<"\tMonth One Profits:\n"
+        <<"\t\tWEEK:\t\t\tPROFIT:\n";
+    for (it=monthlyProfits.begin(); it!=monthlyProfits.end(); ++it){
+        std::cout<<"\t\t"<< it->first
+        <<"\t\t\t" << it->second<<"\n";
+    }
+    return 0;
+}
 ```
+Maps have a heavy use of iterators, which are units designed in programming to, as the name implies, "iterate" throughout a dataset or table. The "it->first" is telling the iterator to iterate through the first key, in this case the week number, and "it->second" tells the iterator to iterate through the value, the profit amount.
 
 **Sets in STL:**
 Sets are described as associative containers
