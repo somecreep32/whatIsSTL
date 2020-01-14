@@ -20,7 +20,7 @@ int main(){
     
     std::cout << "The bear species fighting for the twinkies: "; 
     for (auto i = twinkies.begin(); i != twinkies.end(); ++i) 
-        std::cout << *i << " "; 
+        std::cout<<"Species: "<<*i<<" "; 
 
 }
 ```
