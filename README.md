@@ -28,7 +28,7 @@ int main(){
 This means that if needed, the vector can hold more than 5 values or less than 5 values if necessary. In the example above, it displays how many species of bear fight over 1 single twinkie. Vectors are much more useful in situations where outputs are not guarenteed to be exactly fitting for the array. Think of vectors as saftey netting, if the main system doesn't work, then the saftey net can prevent it from breaking and keep the system functioning.
 
 **Maps in STL:**
-Maps within STL are associative containers that 'map' data and store in an order.
+Maps within STL are associative containers that 'map' data and store in an order. The way a default map is outputted is similar to those of a table in algebraic equations. An input and an output, and xy table as you may.
 ```cpp
 #include <iostream>
 #include <map>
