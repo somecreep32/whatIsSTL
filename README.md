@@ -57,8 +57,28 @@ int main(){
 Maps have a heavy use of iterators, which are units designed in programming to, as the name implies, "iterate" throughout a dataset or table. The "it->first" is telling the iterator to iterate through the first key, in this case the week number, and "it->second" tells the iterator to iterate through the value, the profit amount.
 
 **Sets in STL:**
-Sets are described as associative containers
+Sets are described as associative containers that identify themselves based on the value of the element. These can be very similar to an array; however, the array organization is rather instant. This can get more in depth from the example procided below.
 ```cpp
 #include <iostream>
+#include <iterator>
+#include <set>
 
+std::set<long, std::greater <long>> chipsSet;
+
+int main(){
+    chipsSet.insert(203);
+    chipsSet.insert(441);
+    chipsSet.insert(356);
+    chipsSet.insert(314);
+    chipsSet.insert(314);
+    chipsSet.insert(262);
+    
+    std::set<long, std::greater<long>>::iterator it;
+    std::cout<<"Weekly Inventory:\n"<<"\tChips Each Day:";
+    for (it = chipsSet.begin(); it != chipsSet.end(); ++it){ 
+        std::cout<<"\n\t\t"<<*it; 
+    } 
+    return 0;
+}
 ```
+Sets relate closely to a map or an array. Sets sort all of the values in numerical order, letter order if used strings. If you notice, the value '314' is inserted twice to try and trick the system. Due to set's structure, the sets remember the values they receive via .insert, and recognize if a value is repeated. Therefore, at the output image, 314 is not only in it's chronological order, but also is only within the table once. Sets can be used for what's in the example, an inventory system. In inventory or register counting, values have a high propbablilty of being closely related, having a wide varity of data, and or representing data as a chronological way to overview sales or income.
