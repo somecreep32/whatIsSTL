@@ -54,7 +54,7 @@ int main(){
     return 0;
 }
 ```
-Maps have a heavy use of iterators, which are units designed in programming to, as the name implies, "iterate" throughout a dataset or table. The "it->first" is telling the iterator to iterate through the first key, in this case the week number, and "it->second" tells the iterator to iterate through the value, the profit amount.
+Maps have a heavy use of iterators, which are units designed in programming to, as the name implies, "iterate" throughout a dataset or table. The "it->first" is telling the iterator to iterate through the first key, in this case the week number, and "it->second" tells the iterator to iterate through the value, the profit amount. Whenever we are doing 'it->first', we are saying to the system: "Hey let's find the first set of the pairs that we are trying to output", which means in this example we are looking at the key, or in our case the week number. Realitively same thing in this example, except we are looking for the seconds value the element or the weekly sales. Maps are intended as their name, they can 'map' out the data to plot numerous pairs of keys and elements to project data.
 
 **Sets in STL:**
 Sets are described as associative containers that identify themselves based on the value of the element. These can be very similar to an array; however, the array organization is rather instant. This can get more in depth from the example procided below.
