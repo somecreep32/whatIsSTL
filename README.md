@@ -97,3 +97,6 @@ int main(){
     }
 }
 ```
+Arrays can only get as simple as you phrase them basically. They are the key component to how all data is stored. Eveything you saw today, including maps, sets, vectors, all revolve around this storage of data. They all are the grandchildren of the array.
+
+That's most of the basics of STL. There are so many more functions for STL; however, we have only chosen a select few basic ones. Now go out there and learn some more!
