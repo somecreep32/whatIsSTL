@@ -83,6 +83,27 @@ int main(){
 ```
 Sets relate closely to a map or an array. Sets sort all of the values in numerical order, letter order if used strings. If you notice, the value '314' is inserted twice to try and trick the system. Due to set's structure, the sets remember the values they receive via .insert, and recognize if a value is repeated. Therefore, at the output image, 314 is not only in it's chronological order, but also is only within the table once. Sets can be used for what's in the example, an inventory system. In inventory or register counting, values have a high propbablilty of being closely related, having a wide varity of data, and or representing data as a chronological way to overview sales or income.
 
+**Pairs in STL:**
+Pairs in STL are a type of utility header file that allows the programmer to store 2 up to two elements. Look of a pair as a plotted point on a graph. A slope formula is much compareable to a pair, as we have a {x(key), y(element)}. 
+```cpp
+#include <iostream>
+#include <utility>
+
+int main(){
+
+std::pair<int, char> bingoCall;
+
+bingoCall.first = 3;
+bingoCall.second = 'I';
+
+std::cout<<"The bingo point is: "<<bingoCall.first<<" "<<bingoCall.second;
+
+return 0;
+    
+}
+```
+For this example, we are using a bingo caller. We would need to set up a system that selects a random point both a char and an int. For this bit, there is not randomizer; however, we are going to choose the point I-3. The instance pair can create an empty data set for a value, for this example as necessary which is an int and a char. Then simply, we are going to output the the values first and second.
+
 And finally, we are going to discuss a really simple part of STL, arrays. Arrays are the simplist form, in my opinion, of data structure and display. Arrays are practically just a table for datatypes.
 ```cpp
 #include <iostream>
